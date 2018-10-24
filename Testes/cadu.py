@@ -13,9 +13,9 @@
 #    print(animal, len(animal))
 
 
-#for i in range(100):
-#    if (i%2) == 0:
-#        print(i)
+for i in range(100):
+    if (i%2) == 0:
+        print(i)
 
 while True:
     reply = input('Enter Text:')
