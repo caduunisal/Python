@@ -67,11 +67,11 @@
 ##################################################################
 # Item 6 Take advantage of each block in TRY/EXCEPT/ELSE/FINALLY #
 ##################################################################
-handle = open('file.txt')
+fd = open('file.txt')
 try:
-    data = handle.read()
+    data = fd.read()
 finally:
-    handle.close()
+    fd.close()
 
 print(data)
 ##################################################################
