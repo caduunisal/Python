@@ -67,15 +67,47 @@
 ##################################################################
 # Item 6 Take advantage of each block in TRY/EXCEPT/ELSE/FINALLY #
 ##################################################################
-fd = open('file.txt')
-try:
-    data = fd.read()
-finally:
-    fd.close()
+#fd = open('file.txt')
+#try:
+#    data = fd.read()
+#finally:
+#    fd.close()
+#
+#print(data)
 
-print(data)
+
+#fd = open('file.txt')
+#fd1 = open('file1.txt', 'w')
+#try:
+#    data = fd.read()
+#    fd1.write(data)
+#finally:
+#    fd.close()
+#    fd1.close()
+#
+#print(data)
 ##################################################################
 
+
+
+####################################################################################
+# Item 7 Consider CONTEXTLIB and with statements for reusable TRY/FINALLY behavior #
+####################################################################################
+
+import logging
+
+logging.getLogger().setLevel(logging.WARNING)
+
+def my_function():
+    logging.debug('Some debug info')
+    logging.error('A real error')
+    logging.debug('More debugging')
+
+my_function()
+
+
+
+####################################################################################
 
 
 
