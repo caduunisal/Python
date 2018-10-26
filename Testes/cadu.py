@@ -93,24 +93,30 @@
 ####################################################################################
 # Item 7 Consider CONTEXTLIB and with statements for reusable TRY/FINALLY behavior #
 ####################################################################################
-
-import logging
-
-logging.getLogger().setLevel(logging.WARNING)
-
-def my_function():
-    logging.debug('Some debug info')
-    logging.error('A real error')
-    logging.debug('More debugging!')
-
-my_function()
-
-
+#
+#import logging
+#
+#logging.getLogger().setLevel(logging.WARNING)
+#
+#def my_function():
+#    logging.debug('Some debug info')
+#    logging.error('A real error')
+#    logging.debug('More debugging!')
+#
+#my_function()
 
 ####################################################################################
 
 
+############################################################
+# Item 8 Use list comprehensions instead of MAP and FILTER #
+############################################################
 
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+square = [x**2 for x in a]
+print(square)
+
+############################################################
 
 
 
