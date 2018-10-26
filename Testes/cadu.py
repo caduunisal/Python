@@ -101,7 +101,7 @@ logging.getLogger().setLevel(logging.WARNING)
 def my_function():
     logging.debug('Some debug info')
     logging.error('A real error')
-    logging.debug('More debugging')
+    logging.debug('More debugging!')
 
 my_function()
 
