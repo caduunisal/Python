@@ -132,12 +132,13 @@
 # valor seja inválido e continue pedindo até que o usuário informe um valor válido. #
 #####################################################################################
 
-number = int(input('Entre com um valor entre 0 e 10:'))
+number = int(input('Entre com um valor entre 0 e 10: '))
 
 while 0 > number or 10 < number:
-    number = input('Entre com um numero valido')
+    number = int(input('Entre com um numero valido: '))
 
 
 #####################################################################################
+
 
 
