@@ -111,15 +111,39 @@
 ############################################################
 # Item 8 Use list comprehensions instead of MAP and FILTER #
 ############################################################
-
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-square = [x**2 for x in a]
-print(square)
-
+#
+#a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#square = [x**2 for x in a]
+#print(square)
+#
 ############################################################
 
 
+#lst = [1, 'Python', 'List', 20]
+#for item in lst:
+#    print(item)
+
+######################################################################################
+# https://powerpython.wordpress.com/2012/04/09/aula-python-estrutura-de-repeticao-1/ #
+######################################################################################
+
+#####################################################################################
+# Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o  #
+# valor seja inválido e continue pedindo até que o usuário informe um valor válido. #
+#####################################################################################
+
+number = int(input('Entre com um valor entre 0 e 10:'))
+
+while number < 0 or number > 10:
+    number = input('Entre com um numero valido')
+    continue
+
+    if number>0 or number<10:
+        print('Correto!')
+        break
 
 
+
+#####################################################################################
 
 
