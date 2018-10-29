@@ -152,16 +152,29 @@
 
 def my_func (list):
     print('a. Maior elemento: ', max(lst))
+    #-------------------------------------------------------
     print('b. Soma: ', sum(lst))
+    #-------------------------------------------------------
     print('c. No. Ocorrencias: ', list.count(list[0]))
+    #-------------------------------------------------------
     print('d. Media: ', sum(list)/len(list))
+    #-------------------------------------------------------
     avg = sum(list) / len(list)
     diffs = {value: abs(value - avg) for value in lst}
     print('e. Mais proximo: ', min(diffs, key=diffs.get))
-    #print('f. ')
+    #-------------------------------------------------------
+    sumnegval = 0
+    for negval in list:
+        if negval < 0:
+            sumnegval = sumnegval + negval
+    print('f. Valores Negativos: ', sumnegval)
+    #-------------------------------------------------------
+    for val in list:
+        print(val)
+        
     #print('g. ') 
 
-lst = [10, 50, 200, 10, 67.3, 10]
+lst = [10, 50, -25, 200, 10, 67.3, 10, -5]
 my_func(lst)
 
 
