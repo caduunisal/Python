@@ -131,14 +131,38 @@
 # Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o  #
 # valor seja inválido e continue pedindo até que o usuário informe um valor válido. #
 #####################################################################################
-
-number = int(input('Entre com um valor entre 0 e 10: '))
-
-while 0 > number or 10 < number:
-    number = int(input('Entre com um numero valido: '))
-
+#
+#number = int(input('Entre com um valor entre 0 e 10: '))
+#
+#while 0 > number or 10 < number:
+#    number = int(input('Entre com um numero valido: '))
 
 #####################################################################################
 
 
+#####################################################################################
+# 1. Crie uma função que recebe uma lista de números e
+#    a. retorne o maior elemento
+#    b. retorne a soma dos elementos
+#    c. retorne o número de ocorrências do primeiro elemento da lista
+#    d. retorne a média dos elementos
+#    e. retorne o valor mais próximo da média dos elementos
+#    f. retorne a soma dos elementos com valor negativo
+#    g. retorne a quantidade de vizinhos iguais
 
+def my_func (list):
+    print('a. Maior elemento: ', max(lst))
+    print('b. Soma: ', sum(lst))
+    print('c. No. Ocorrencias: ', list.count(list[0]))
+    print('d. Media: ', sum(list)/len(list))
+    #print('e. Mais proximo: ', min({value: abs(value - sum(list)/len(list) for value in list)}))
+    
+
+lst = [10, 50, 200, 10]
+my_func(lst)
+
+
+
+
+
+#####################################################################################
