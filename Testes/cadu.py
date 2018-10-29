@@ -156,7 +156,8 @@ def my_func (list):
     print('c. No. Ocorrencias: ', list.count(list[0]))
     print('d. Media: ', sum(list)/len(list))
     #print('e. Mais proximo: ', min({value: abs(value - sum(list)/len(list) for value in list)}))
-    
+    #print('f. ')
+    #print('g. ') 
 
 lst = [10, 50, 200, 10]
 my_func(lst)
