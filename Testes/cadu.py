@@ -169,12 +169,19 @@ def my_func (list):
             sumnegval = sumnegval + negval
     print('f. Valores Negativos: ', sumnegval)
     #-------------------------------------------------------
+    oldval = 1000
+    rep = 0
     for val in list:
-        print(val)
-        
-    #print('g. ') 
+        if val == oldval:
+            #print(val)
+            rep = rep + 1
+        else:
+            oldval = val
+            
 
-lst = [10, 50, -25, 200, 10, 67.3, 10, -5]
+    print('g. Vizinhos: ', rep) 
+
+lst = [10, 50, -25, 200, 200, 10, 67.3, 10, -5, -5, 10]
 my_func(lst)
 
 
