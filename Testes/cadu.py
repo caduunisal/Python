@@ -134,14 +134,8 @@
 
 number = int(input('Entre com um valor entre 0 e 10:'))
 
-while number < 0 or number > 10:
+while 0 > number or 10 < number:
     number = input('Entre com um numero valido')
-    continue
-
-    if number>0 or number<10:
-        print('Correto!')
-        break
-
 
 
 #####################################################################################
