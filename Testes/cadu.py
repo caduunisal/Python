@@ -155,11 +155,13 @@ def my_func (list):
     print('b. Soma: ', sum(lst))
     print('c. No. Ocorrencias: ', list.count(list[0]))
     print('d. Media: ', sum(list)/len(list))
-    #print('e. Mais proximo: ', min({value: abs(value - sum(list)/len(list) for value in list)}))
+    avg = sum(list) / len(list)
+    diffs = {value: abs(value - avg) for value in lst}
+    print('e. Mais proximo: ', min(diffs, key=diffs.get))
     #print('f. ')
     #print('g. ') 
 
-lst = [10, 50, 200, 10]
+lst = [10, 50, 200, 10, 67.3, 10]
 my_func(lst)
 
 
