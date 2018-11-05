@@ -140,6 +140,16 @@
 #####################################################################################
 
 
+
+
+
+
+
+################################################################################
+# http://www-di.inf.puc-rio.br/~milidiu/inf1025/exercicios/Lista12_INF1025.pdf #
+################################################################################
+
+
 #####################################################################################
 # 1. Crie uma função que recebe uma lista de números e
 #    a. retorne o maior elemento
@@ -150,41 +160,66 @@
 #    f. retorne a soma dos elementos com valor negativo
 #    g. retorne a quantidade de vizinhos iguais
 
-def my_func (list):
-    print('a. Maior elemento: ', max(lst))
-    #-------------------------------------------------------
-    print('b. Soma: ', sum(lst))
-    #-------------------------------------------------------
-    print('c. No. Ocorrencias: ', list.count(list[0]))
-    #-------------------------------------------------------
-    print('d. Media: ', sum(list)/len(list))
-    #-------------------------------------------------------
-    avg = sum(list) / len(list)
-    diffs = {value: abs(value - avg) for value in lst}
-    print('e. Mais proximo: ', min(diffs, key=diffs.get))
-    #-------------------------------------------------------
-    sumnegval = 0
-    for negval in list:
-        if negval < 0:
-            sumnegval = sumnegval + negval
-    print('f. Valores Negativos: ', sumnegval)
-    #-------------------------------------------------------
-    oldval = 1000
-    rep = 0
-    for val in list:
-        if val == oldval:
-            #print(val)
-            rep = rep + 1
-        else:
-            oldval = val
-            
+#def my_func (list):
+#    print('a. Maior elemento: ', max(lst))
+#    #-------------------------------------------------------
+#    print('b. Soma: ', sum(lst))
+#    #-------------------------------------------------------
+#    print('c. No. Ocorrencias: ', list.count(list[0]))
+#    #-------------------------------------------------------
+#    print('d. Media: ', sum(list)/len(list))
+#    #-------------------------------------------------------
+#    avg = sum(list) / len(list)
+#    diffs = {value: abs(value - avg) for value in lst}
+#    print('e. Mais proximo: ', min(diffs, key=diffs.get))
+#    #-------------------------------------------------------
+#    sumnegval = 0
+#    for negval in list:
+#        if negval < 0:
+#            sumnegval = sumnegval + negval
+#    print('f. Valores Negativos: ', sumnegval)
+#    #-------------------------------------------------------
+#    oldval = 1000
+#    rep = 0
+#    for val in list:
+#        if val == oldval:
+#            #print(val)
+#            rep = rep + 1
+#        else:
+#            oldval = val
+#            
+#
+#    print('g. Vizinhos: ', rep) 
+#
+#lst = [10, 50, -25, 200, 200, 10, 67.3, 67.3, 10, -5, -5, 10]
+#my_func(lst)
 
-    print('g. Vizinhos: ', rep) 
-
-lst = [10, 50, -25, 200, 200, 10, 67.3, 10, -5, -5, 10]
-my_func(lst)
+#####################################################################################
 
 
+
+
+#####################################################################################
+# a) Faça uma função que receba duas listas e retorne True se são iguais 
+#     ou False caso contrário.
+# 
+# PS: Duas listas são iguais se possuem os mesmos valores e na mesma ordem.
+#
+# b) Faça uma função que receba duas listas e retorne True se têm os mesmos elementos 
+#    ou False caso contrário 
+
+def my_func (list1, list2):
+    #if list1 in list2:
+    #    print('OK')
+    #else:
+    #    print('ERROR')
+    #    #print("Simetria: ", x)
+    print(list1[2])
+
+list1 = [10, 20, 30]
+list2 = [10]
+
+my_func(list1, list2)
 
 
 
