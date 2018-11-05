@@ -208,19 +208,92 @@
 # b) Faça uma função que receba duas listas e retorne True se têm os mesmos elementos 
 #    ou False caso contrário 
 
-def my_func (list1, list2):
-    #if list1 in list2:
-    #    print('OK')
-    #else:
-    #    print('ERROR')
-    #    #print("Simetria: ", x)
-    print(list1[2])
+# a)
+#def my_func (list1, list2):
+#
+#    rc = 0
+#    if len(list1) != len(list2):
+#        print('Different lists!')
+#        rc = 1
+#    else:
+#        i = 0
+#        while i < len(list1):
+#            if list1[i] == list2[i]:
+#                i = i+1
+#            else:
+#                print('Different lists!')
+#                rc = 1
+#                break
+#            
+#    if rc == 0:
+#        print('Equal lists!')
+#
+#list1 = [15, 20, 30]
+#list2 = [15, 20, 30]
+#
+#my_func(list1, list2)
 
-list1 = [10, 20, 30]
-list2 = [10]
 
-my_func(list1, list2)
-
-
+# b)
+#def my_func (list1, list2):
+#
+#    rc = 0
+#    if len(list1) != len(list2):
+#        print('False')
+#        rc = 1
+#    else:
+#        i = 0
+#        while i < len(list1):
+#            if list1[i] == list2[i]:
+#                i = i+1
+#            else:
+#                print('False')
+#                rc = 1
+#                break
+#            
+#    if rc == 0:
+#        print('True')
+#
+#list1 = [15, 20, 30]
+#list2 = [15, 20, 30]
+#
+#my_func(list1, list2)
 
 #####################################################################################
+
+
+##########################################################################################################
+# Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, #
+# between 2000 and 3200 (both included).                                                                 #
+# The numbers obtained should be printed in a comma-separated sequence on a single line.                 #
+##########################################################################################################
+
+#list1 = []
+#for num in range(2000, 3201):
+#    if (num%7) == 0 and (num%5) == 1:
+#        list1.append(num)
+#        #print('Divisible by 7 and NOT multiple of 5: ', num)
+#print(list1)
+
+##########################################################################################################
+
+
+
+
+############################################################################################################
+# Write a program that accepts sequence of lines as input and prints the lines after making all characters #
+# in the sentence capitalized.                                                                             #
+############################################################################################################
+
+lines = []
+while True:
+    s = input()
+    if s:
+        lines.append(s.upper())
+    else:
+        break;
+
+for sentence in lines:
+    print (sentence)
+
+############################################################################################################
