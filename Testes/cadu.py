@@ -284,17 +284,92 @@
 # Write a program that accepts sequence of lines as input and prints the lines after making all characters #
 # in the sentence capitalized.                                                                             #
 ############################################################################################################
+#
+#lines = []
+#while True:
+#    s = input()
+#    if s:
+#        lines.append(s.upper())
+#    else:
+#        break;
+#
+#for sentence in lines:
+#    print (sentence)
+#
+############################################################################################################
 
-lines = []
-while True:
-    s = input()
-    if s:
-        lines.append(s.upper())
-    else:
-        break;
 
-for sentence in lines:
-    print (sentence)
+############################################################################################################
+# Faça um algoritmo que solicite ao usuário números e os armazene em um vetor de 30 posições. Crie uma     #
+# função que recebe o vetor preenchido e substitua todas as ocorrência de valores positivos por 1 e todos  #
+# os valores negativos por 0.                                                                              #
+############################################################################################################
+#
+#list = []
+#i = 1
+#
+#def insert_array (digit):
+#    if int(digit)>=0:
+#        list.append('1')
+#    else:
+#        list.append('0')
+#
+#while i<11:
+#    digit = input('Valor: ')
+#    insert_array(digit)
+#    i = i+1
+#
+#
+#print(list)
+#
+############################################################################################################
+
+
+
+############################################################################################################
+# Crie uma função que retorne o valor da expressão: 2/3 + 3/5 + 4/7 + 5/9 + … + n/m, para um valor de n    # 
+# definido pelo usuário. Verifique se o valor de n definido pelo usuário é positivo e, caso não seja,      #
+# solicite outro valor até ser fornecido um valor positivo.                                                #
+############################################################################################################
+
+
 
 ############################################################################################################
 
+
+
+
+
+
+
+
+
+
+############################################################################################################
+# Tendo uma matriz 10×10 preenchida com valores aleatórios entre 10 e 50, mostre qual é o maior valor      # 
+# existente na matriz desconsiderando os elementos da diagonal principal.                                  #
+############################################################################################################
+
+mtrz = []
+n = 10
+
+for i in range(n):
+    mtrz.append(i)
+    for j in range(n):
+        mtrz.append(j)
+        #print(i, j)
+print(mtrz)
+
+############################################################################################################
+
+
+#matriz = []
+#n = 2
+#for i in range(n):
+#   tmp = []
+#   for j in range(n):
+#       elemento = input("Digite o elemento da posicao {0}-{1} ".format(i,j))
+#       tmp.append(elemento)
+#
+#   matriz.append(tmp[:])
+#print(matriz)
