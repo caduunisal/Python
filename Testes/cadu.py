@@ -398,14 +398,28 @@
 ############################################################################################################
 # Faça um Programa que peça dois números e imprima a soma.                                                 #
 ############################################################################################################
-num1 = input('Primeiro numero: ')
-num2 = input('Segundo numero: ')
-print('Soma: ', int(num1) + int(num2))
+#num1 = input('Primeiro numero: ')
+#num2 = input('Segundo numero: ')
+#print('Soma: ', int(num1) + int(num2))
+#
+############################################################################################################
+
 
 ############################################################################################################
 #Faça um Programa que peça as 4 notas bimestrais e mostre a média.
 ############################################################################################################
+notas = []
+i = 4
 
+while i > 0:
+        notas.append(input("Bimestre: "))
+        i = i-1
+
+media = sum(notas) / len(notas)
+print("Media: ", media)
+print(notas)
+
+############################################################################################################
 
 #Faça um Programa que converta metros para centímetros.
 #Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
