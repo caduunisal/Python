@@ -349,17 +349,17 @@
 # Tendo uma matriz 10×10 preenchida com valores aleatórios entre 10 e 50, mostre qual é o maior valor      # 
 # existente na matriz desconsiderando os elementos da diagonal principal.                                  #
 ############################################################################################################
-
-mtrz = []
-n = 10
-
-for i in range(n):
-    mtrz.append(i)
-    for j in range(n):
-        mtrz.append(j)
-        #print(i, j)
-print(mtrz)
-
+#
+#mtrz = []
+#n = 10
+#
+#for i in range(n):
+#    mtrz.append(i)
+#    for j in range(n):
+#        mtrz.append(j)
+#        #print(i, j)
+#print(mtrz)
+#
 ############################################################################################################
 
 
@@ -373,3 +373,45 @@ print(mtrz)
 #
 #   matriz.append(tmp[:])
 #print(matriz)
+
+
+# https://wiki.python.org.br/ListaDeExercicios
+
+
+
+
+############################################################################################################
+# Faça um Programa que mostre a mensagem "Alo mundo" na tela.                                              #
+############################################################################################################
+
+############################################################################################################
+#print('Alo mundo')
+
+############################################################################################################
+# Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].           #
+############################################################################################################
+#num = input('Digite um numero: ')
+#print('O numero informado foi: ', num)
+
+############################################################################################################
+
+############################################################################################################
+# Faça um Programa que peça dois números e imprima a soma.                                                 #
+############################################################################################################
+num1 = input('Primeiro numero: ')
+num2 = input('Segundo numero: ')
+print('Soma: ', int(num1) + int(num2))
+
+############################################################################################################
+#Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+############################################################################################################
+
+
+#Faça um Programa que converta metros para centímetros.
+#Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+#Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+#Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+#Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
+#
+#    C = (5 * (F-32) / 9). 
+        
