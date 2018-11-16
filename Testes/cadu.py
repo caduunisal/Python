@@ -427,17 +427,30 @@
 # 1 metro = 100 centimetros
 #dado = float(input("Medida em metros: "))
 #print("Medida em centimetros: ", (dado*100))
-
+#
 ############################################################################################################
+
+
 
 ############################################################################################################
 # Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
 ############################################################################################################
+#pi = 3.14
+#raio = float(input("Entre com o raio: "))
+#area = (pi * (raio ** 2))
+#
+#print("Area: ", area)
+#
+############################################################################################################
+
+
+############################################################################################################
+# Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+############################################################################################################
 
 ############################################################################################################
 
 
-#Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
 #Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
 #Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
 #
