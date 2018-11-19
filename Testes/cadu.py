@@ -482,7 +482,7 @@
 
 
 
-lista = [1, 2.5, 'DevCode', [5,6] ,4, 4]
+#lista = [1, 2.5, 'DevCode', [5,6] ,4, 4]
 
 #print (lista[0])
 #print (lista[1])
@@ -502,6 +502,6 @@ lista = [1, 2.5, 'DevCode', [5,6] ,4, 4]
 #print(lista.index('IBM'))
 #print(lista.count(4))
 lista.reverse()
-print(lista)
+#print(lista)
 lista.extend([10, 20])
-print(lista)
+#print(lista)
