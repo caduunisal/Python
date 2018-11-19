@@ -472,8 +472,36 @@
 #
 # C = (5 * (F-32) / 9). 
 ############################################################################################################
-temp = float(input("Temperatura em Farenheit: "))
-print("Temperatura Celsius: ", (5 * (temp-32) / 9))
-
+#temp = float(input("Temperatura em Farenheit: "))
+#print("Temperatura Celsius: ", (5 * (temp-32) / 9))
+#
 ############################################################################################################
-        
+
+
+
+
+
+
+lista = [1, 2.5, 'DevCode', [5,6] ,4, 4]
+
+#print (lista[0])
+#print (lista[1])
+#print (lista[2])
+#print (lista[3])
+#print (lista[3][0])
+#print (lista[3][1])
+#print (lista[1:3])
+#print (lista[1:6])
+#print (lista[1:6:2])
+
+#lista.append('IBM')
+
+#for elemento in lista:
+#        print(elemento)
+   
+#print(lista.index('IBM'))
+#print(lista.count(4))
+lista.reverse()
+print(lista)
+lista.extend([10, 20])
+print(lista)
