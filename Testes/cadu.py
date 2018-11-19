@@ -501,7 +501,9 @@
    
 #print(lista.index('IBM'))
 #print(lista.count(4))
-lista.reverse()
+#lista.reverse()
 #print(lista)
-lista.extend([10, 20])
+#lista.extend([10, 20])
 #print(lista)
+
+
