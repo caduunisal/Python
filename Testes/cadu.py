@@ -507,5 +507,19 @@
 #print(lista)
 
 
+def calc (opt):
+        if opt == "adi":
+                print("Soma")
+        elif opt == "sub":
+                print("Subtracao")
+        elif opt == "div":
+                print("Divisao")
+        elif opt == "mul":
+                print("Multiplicacao")
+        else:
+                print("Funcao invalida")
+
+calc("div")
+
 
 
