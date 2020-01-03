@@ -1053,7 +1053,12 @@ wn = turtle.Screen()
 wn.bgcolor("lightblue")
 
 cadu = turtle.Turtle()
-desenhaQuadrado(cadu, 100)
+tamanho = 20
+for i in range(15):
+    desenhaQuadrado(cadu, 100)
+    tamanho = tamanho + 10      # aumenta o tamanho para a próxima vez
+    cadu.forward(10)            # move cadu um pouco à frente
+    cadu.right(18)              # e dá uma virada nele
 
 carlos = turtle.Turtle()
 carlos.penup()              # Ajustando posicao de novo desenho
