@@ -1055,7 +1055,7 @@ wn.bgcolor("lightblue")
 cadu = turtle.Turtle()
 tamanho = 20
 for i in range(15):
-    desenhaQuadrado(cadu, 100)
+    desenhaQuadrado(cadu, tamanho)
     tamanho = tamanho + 10      # aumenta o tamanho para a próxima vez
     cadu.forward(10)            # move cadu um pouco à frente
     cadu.right(18)              # e dá uma virada nele
