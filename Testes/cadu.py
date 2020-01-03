@@ -481,32 +481,38 @@
 
 
 
+'''
+lista = [1, 2.5, 'DevCode', [5,6] ,4, 4]
 
-#lista = [1, 2.5, 'DevCode', [5,6] ,4, 4]
+print (lista[0])
+print (lista[1])
+print (lista[2])
+print (lista[3])
+print (lista[3][0])
+print (lista[3][1])
+print (lista[1:3])
+print (lista[1:6])
+print (lista[1:6:2])
 
-#print (lista[0])
-#print (lista[1])
-#print (lista[2])
-#print (lista[3])
-#print (lista[3][0])
-#print (lista[3][1])
-#print (lista[1:3])
-#print (lista[1:6])
-#print (lista[1:6:2])
+lista.append('IBM')
 
-#lista.append('IBM')
-
-#for elemento in lista:
-#        print(elemento)
+for elemento in lista:
+        print(elemento)
    
-#print(lista.index('IBM'))
-#print(lista.count(4))
-#lista.reverse()
-#print(lista)
-#lista.extend([10, 20])
-#print(lista)
+print(lista.index('IBM'))
+print(lista.count(4))
+lista.reverse()
+print(lista)
+lista.extend([10, 20])
+print(lista)
+'''
 
 
+
+
+
+
+'''
 def calc (opt):
         if opt == "adi":
                 print("Soma")
@@ -519,7 +525,513 @@ def calc (opt):
         else:
                 print("Funcao invalida")
 
-calc("div")
+calc("mul")
+'''
+
+
+
+
+
+'''
+list = [10,15,20,25,30]
+
+for item in list:
+        if item > 20:
+                print(item)
+        else:
+                print("NULL")
+'''
+
+
+# João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. 
+# Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo 
+# (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a 
+# variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite 
+# e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas. 
+
+'''
+peso_peixes = input ("Digite o peso: ")
+print("Peso pescado: ", peso_peixes, "Kg")
+excedente = int(peso_peixes) - 50
+if excedente > 0:
+    print("Excedente: ", excedente, "Kg")
+    multa = excedente * 4
+    print("Multa: R$", multa)
+else:
+    print("Peso em conformidade!")
+'''
+
+
+# Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+#
+#    A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+#    A mensagem "Reprovado", se a média for menor do que sete;
+#    A mensagem "Aprovado com Distinção", se a média for igual a dez. 
+'''
+list = []
+i = 2
+
+while i > 0:
+    nota = float(input("Nota: "))
+    list.append(nota)
+    i = i-1
+
+media = float(list[0] + list[1]) / 2
+
+if media >= 7 and media != 10:
+    print("Aprovado")
+elif media < 7:
+    print("Reprovado")
+else:
+    print("Aprovado com Distincao")
+'''
+
+#Faça um Programa para um caixa eletrônico. O programa deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor
+#  serão fornecidas. As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. 
+# O programa não deve se preocupar com a quantidade de notas existentes na máquina. 
+
+
+# Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+#    "Telefonou para a vítima?"
+#    "Esteve no local do crime?"
+#    "Mora perto da vítima?"
+#    "Devia para a vítima?"
+#    "Já trabalhou com a vítima?" 
+# O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. 
+# Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", 
+# entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente". 
+'''
+list = []
+i = 5
+pos = 0
+neg = 0
+
+info = input("Telefonou para a vitima? [y|n]")
+list.append(info)
+info = input("Esteve no local do crime? [y|n]")
+list.append(info)
+info = input("Mora perto da vitima? [y|n]")
+list.append(info)
+info = input("Devia para a vitima? [y|n]")
+list.append(info)
+info = input("Ja trabalhou para a vitima? [y|n]")
+list.append(info)
+
+for value in list:
+    if value == 'y':
+        pos = pos+1
+    else:
+        neg = neg+1
+print("Pos: ", pos)
+print("Neg: ", neg)
+
+if pos == 2:
+    print("Suspeito")
+elif pos == 3 or pos == 4:
+    print("Cumplice")
+elif pos == 5:
+    print("Assassino")
+else:
+    print("Inocente")
+'''
+
+
+
+'''
+# Dicionarios
+dict = {}
+dict['a'] = 'Carlos'
+dict['b'] = 'Eduardo'
+dict['c'] = 'Ramos'
+
+print (dict['b'])
+print (dict)
+'''
+
+
+'''
+# Fatorial
+def fat(n):
+  if n <= 1:
+    return 1
+  return fat(n-1) * n
+
+print(fat(6))
+'''
+
+
+# Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+#
+#true = 1
+#
+#while true:
+#    number = int(input("Insira uma nota [0-10]:"))
+#    if number <0 or number > 10:
+#        print("Nota invalida!")
+#    else:
+#        print("Nota OK!")
+#        break
+
+
+# http://www.galirows.com.br/meublog/programacao/exercicios-resolvidos-python/
+
+# Exercício 1: faça um algoritmo que solicite ao usuário números e os armazene em 
+# um vetor de 10 posições. Crie uma função que recebe o vetor preenchido e substitua 
+# todas as ocorrência de valores positivos por 1 e todos os valores negativos por 0.
+
+#def troca(vet):
+#    for i in range(10):
+#        if vet[i] >= 0:
+#            vet[i] = 1
+#        else:
+#            vet[i] = 0
+#    return vet
+# 
+#vet = [0]*10
+#for i in range(10):
+#    vet[i] = int(input('Digite um valor: '))
+#print (vet)
+#troca(vet)
+#print (vet)
+
+# Exercício 3: Faça um algoritmo que solicite ao usuário números e os armazene em um 
+# vetor de 20 posições. Crie uma função que recebe o vetor preenchido e substitua todas 
+# as ocorrências de valores negativos por zero, as ocorrências de valores menores do que 
+# 10 por 1 e as demais ocorrências por 2.
+
+#def troca(vet):
+#    for i in range(10):
+#        if vet[i] < 0:
+#            vet[i] = 0
+#        elif vet[i] < 10:
+#            vet[i] = 1
+#        else:
+#            vet[i] = 2
+#    return vet
+#
+#vet = [0]*10
+#for i in range(10):
+#    vet[i] = int(input('Digite um valor: '))
+#
+#troca(vet)
+#print(vet)
+
+# Exercício 4: crie um algoritmo que solicite 3 valores que representarão os lados de um triângulo. 
+# Considere que não importa a ordem que serão fornecidos os valores, podendo ser fornecido primeiro 
+# a hipotenusa e depois os catetos, ou primeiro os catetos e depois a hipotenusa, etc. Crie também 
+# uma função que recebe o vetor e retorna se os lados informados formam um triângulo retângulo. 
+'''
+def confere(vet):
+    if ((vet[0] + vet[1]) < vet[2]) or ((vet[1] + vet[2]) < vet[0]) or ((vet[2] + vet[0]) < vet[1]):
+        return "Nao forma triangulo"
+    elif vet[0] == vet[1] and vet[1] == vet[2]:
+        return "Triangulo Retangulo"
+    elif vet[0] != vet[1] and vet[1] != vet[2]:
+        return "Triangulo Escaleno"
+    else:
+        return "Triangulo Isosceles"
+
+vet = [0]*3
+for i in range(3):
+    vet[i] = int(input('Digite um valor: '))
+
+print(confere(vet))
+'''
+'''
+str = "Python Training"
+
+print (str.replace("Python", "PYTHON"))
+print ("-" * 20)
+print (10 // 3)
+print (str.lower())
+print (str[1:-2])
+'''
+
+
+'''
+nome = "Carlos"
+sobrenome = "Ramos"
+
+print (f"Nome completo: {nome} {sobrenome}")
+'''
+
+'''
+elegible = False
+
+if elegible:
+    print ("Elegible for loan")
+else:
+    print ("Not elegible for loan")
+
+'''
+
+'''
+name = input ("Input your complete Name: ")
+
+if len(name) > 50:
+    print ("Characters exceeded... Should be less than 50")
+elif len(name) < 3:
+    print ("Less than 3 characters... Try again")
+else:
+    print ("Name looks good!")
+
+'''
+
+'''
+started = False
+
+while True:
+    digit = input ("> ").upper()
+    if (digit == "HELP"):
+        print ("""
+            Start => Satrt the car
+            Stop  => Stop the car
+            Quit  => Exit the program 
+        """) 
+        continue
+    if digit == "START":
+        if started:
+            print ("Car already started!")
+            #started = True
+        else:
+            print ("Car started...")
+            started = True
+    elif digit == "STOP":
+        if not started:
+            print (" Car already stopped!")
+            #started = False
+        else:
+            print ("Car stopped...")
+            started = False
+    elif (digit == "QUIT"):
+        print ("Bye bye!")
+        break
+    else:
+        print ("Sorry, I dont't understand that. Type 'help' to more info!")
+
+'''
+
+'''
+prices = [10, 20, 30]
+total = 0
+
+for item in prices:
+    total += item
+
+print (f"Total: {total}")
+'''
+
+'''
+for x in range(4):
+    for y in range(3):
+        print (f"({x}, {y})")
+'''
+
+'''
+numbers = [5, 2, 5, 2, 10]
+
+for x in numbers:
+    print("x" * x)
+
+'''
+
+'''
+lst = [200, 100, 30, 70, 25]
+max = lst[0]
+
+for number in lst:
+    if number > max:
+        max = number
+
+print (max)
+'''
+
+'''
+matrix = [
+         [0, 1, 2],
+         [10, 20, 30],
+         [100, 200, 300],
+         [1000, 2000, 3000, 4000]
+         ]
+matrix[2][2] = 500
+print (matrix[2][2])
+matrix.append(1234)
+print(matrix)
+
+'''
+'''
+lst = [10, 20, 30, 40, 50]
+lst.insert(1, 15)
+print(lst)
+lst.remove(30)
+print(lst)
+#lst.clear()
+#print(lst)
+lst.append(3)
+print(lst)
+lst.sort()
+print(lst)
+'''
+
+'''
+# Removendo itens duplicados em uma lista
+
+lst = [10, 20, 20, 30, 20, 10, 15]
+unique = []
+
+for item in lst:
+    if (item in unique):
+        continue
+    else:
+        unique.append(item)
+unique.sort()
+print(unique)
+
+'''
+
+'''
+# Tuples: Diferentemente das listas, nao podem ser modificadas
+
+coordinates = (10, 20, 30)
+x, y, z = coordinates
+print(f"x = {x} | y = {y} | z = {z}")
+
+'''
+
+
+# Dictonaries
+'''
+customer = {
+    "name": "Carlos Eduardo Ramos",
+    "address": "Rua Ari Meireles 594",
+    "age": 41,
+    "email": "kadu.unisal1@gmail.com",
+    "verified": True
+}
+
+print(customer["name"])
+'''
+
+'''
+numbers = {
+    "1": "Um",
+    "2": "Dois",
+    "3": "Tres",
+    "4": "Quatro",
+    "5": "Cinco"
+}
+
+phone = input("Type a number: ")
+output = ""
+
+for ch in phone:
+    output += numbers.get(ch, "!") + " "
+
+print(output)
+
+'''
+
+'''
+def greet_user(name):
+    print(f"Hello, {name}!")
+
+name = input("Type you name: ")
+greet_user(name.upper())
+
+'''
+
+'''
+lst = [10, 20, 30]
+lst[1] = 15
+lst.append(40)
+print(lst)
+lst.pop(2)
+print(lst)
+
+lst.reverse()
+print(lst)
+'''
+
+'''
+# Removendo vogais
+vogais = ["a", "e", "i", "o", "u"]
+out_name = []
+loop = True
+
+while loop:
+    vog = 0
+    con = 0
+    name = input("Nome '[EXIT|SAIR] to quit': ")
+    if (name.lower() == "sair" or name.lower() == "exit"):
+        print("BYE BYE!")
+        break
+
+    for item in name.lower():
+        if item in vogais:
+            vog += 1
+            continue
+        if item != " ":
+            out_name.append(item)
+            con += 1
+
+    print(out_name)
+    print(f"Vogais: {vog} | Consoantes: {con}")
+    out_name = []
+
+'''
+
+'''
+# Arquivos
+fd = open("file.txt", "w")
+for item in range(5):
+    fd.write(f"{item}")
+fd.close()
+
+fd = open("file.txt", "r")
+
+for item in fd.read():
+    if (int(item) % 2) == 0:
+        print(f"{item}")
+fd.close()
+
+'''
+
+
+
+'''
+# Arquivos
+fd = open("file.txt", "w")
+for item in range(10):
+    fd.write(f"{item}")
+fd.close()
+
+fd = open("file.txt", "r")
+
+for item in fd.read():
+    if (int(item) % 2) == 0:
+        print(f"{item}")
+fd.close()
+'''
+
+
+# Treinando tartarugas
+import turtle            # permite usar as funções e objetos do módulo turtle
+wn = turtle.Screen()     # cria uma janela gráfica
+wn.bgcolor("lightblue")
+alex = turtle.Turtle()   # cria um turtle chamado alex
+alex.forward(150)        # manda o alex se mover 150 unidades para frente
+alex.left(90)            # roda de 90 graus para a esquerda
+alex.forward(75)         # desenha o segundo lado do retângulo
+alex.left(90)
+alex.forward(150)
+alex.left(90)
+alex.color("red")
+alex.forward(75)
+wn.exitonclick()
+
+
+
+
 
 
 
