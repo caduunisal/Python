@@ -1013,7 +1013,7 @@ for item in fd.read():
 fd.close()
 '''
 
-
+'''
 # Treinando tartarugas
 import turtle            # permite usar as funções e objetos do módulo turtle
 wn = turtle.Screen()     # cria uma janela gráfica
@@ -1028,10 +1028,25 @@ cadu.left(90)
 cadu.color("red")
 cadu.forward(75)
 wn.exitonclick()
+'''
 
 
+# Treinando Tartarugas
+import turtle
 
+def desenhaQuadrado (t, tam):
+    '''Faca a tartaruga t desenhar um quadrado de lado tam'''
 
+    for i in range(4):
+        t.forward(tam)
+        t.left(90)
+
+wn = turtle.Screen()
+wn.bgcolor("lightblue")
+
+cadu = turtle.Turtle()
+desenhaQuadrado(cadu, 50)
+wn.exitonclick()
 
 
 
