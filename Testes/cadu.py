@@ -1018,15 +1018,15 @@ fd.close()
 import turtle            # permite usar as funções e objetos do módulo turtle
 wn = turtle.Screen()     # cria uma janela gráfica
 wn.bgcolor("lightblue")
-alex = turtle.Turtle()   # cria um turtle chamado alex
-alex.forward(150)        # manda o alex se mover 150 unidades para frente
-alex.left(90)            # roda de 90 graus para a esquerda
-alex.forward(75)         # desenha o segundo lado do retângulo
-alex.left(90)
-alex.forward(150)
-alex.left(90)
-alex.color("red")
-alex.forward(75)
+cadu = turtle.Turtle()   # cria um turtle chamado cadu
+cadu.forward(150)        # manda o cadu se mover 150 unidades para frente
+cadu.left(90)            # roda de 90 graus para a esquerda
+cadu.forward(75)         # desenha o segundo lado do retângulo
+cadu.left(90)
+cadu.forward(150)
+cadu.left(90)
+cadu.color("red")
+cadu.forward(75)
 wn.exitonclick()
 
 
