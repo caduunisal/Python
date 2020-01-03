@@ -1041,8 +1041,7 @@ def desenhaQuadrado (t, tam):
         t.color("red")
         t.forward(tam)
         t.left(90)
-        #t.circle(15)
-
+        
 def desenhaCirculo (t, raio):
     '''Faca a tartaruga t desenhar um circulo de raio raio'''
 
@@ -1059,6 +1058,7 @@ carlos.penup()              # Ajustando posicao de novo desenho
 carlos.goto(200,200)        # Ajustando posicao de novo desenho
 carlos.pendown()            # Ajustando posicao de novo desenho
 desenhaCirculo(carlos, 50)
+
 wn.exitonclick()
 
 
