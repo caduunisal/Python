@@ -1038,15 +1038,31 @@ def desenhaQuadrado (t, tam):
     '''Faca a tartaruga t desenhar um quadrado de lado tam'''
 
     for i in range(4):
+        t.color("red")
         t.forward(tam)
         t.left(90)
+        #t.circle(15)
+
+def desenhaCirculo (t, raio):
+    '''Faca a tartaruga t desenhar um circulo de raio raio'''
+
+    t.circle(raio)
 
 wn = turtle.Screen()
 wn.bgcolor("lightblue")
 
 cadu = turtle.Turtle()
-desenhaQuadrado(cadu, 50)
+desenhaQuadrado(cadu, 100)
+
+carlos = turtle.Turtle()
+carlos.penup()              # Ajustando posicao de novo desenho
+carlos.goto(200,200)        # Ajustando posicao de novo desenho
+carlos.pendown()            # Ajustando posicao de novo desenho
+desenhaCirculo(carlos, 50)
 wn.exitonclick()
+
+
+
 
 
 
