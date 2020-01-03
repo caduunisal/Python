@@ -1030,15 +1030,17 @@ cadu.forward(75)
 wn.exitonclick()
 '''
 
-
+# -----------------------------------------------------------------------------
 # Treinando Tartarugas
+# -----------------------------------------------------------------------------
 import turtle
 
 def desenhaQuadrado (t, tam):
     '''Faca a tartaruga t desenhar um quadrado de lado tam'''
 
-    for i in range(4):
-        t.color("red")
+    #for i in range(4):
+    for i in ['red', 'blue', 'green', 'blue']:
+        t.color(i)
         t.forward(tam)
         t.left(90)
         
@@ -1062,6 +1064,9 @@ desenhaCirculo(carlos, 50)
 wn.exitonclick()
 
 
+# -----------------------------------------------------------------------------
+# Treinando Tartarugas
+# -----------------------------------------------------------------------------
 
 
 
