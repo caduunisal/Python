@@ -1039,7 +1039,7 @@ def desenhaQuadrado (t, tam):
     '''Faca a tartaruga t desenhar um quadrado de lado tam'''
 
     #for i in range(4):
-    for i in ['red', 'blue', 'green', 'blue']:
+    for i in ['red', 'cyan', 'white', 'orange']:
         t.color(i)
         t.forward(tam)
         t.left(90)
@@ -1048,13 +1048,14 @@ def desenhaCirculo (t, raio):
     '''Faca a tartaruga t desenhar um circulo de raio raio'''
 
     t.circle(raio)
+    t.color('yellow')
 
 wn = turtle.Screen()
 wn.bgcolor("lightblue")
 
 cadu = turtle.Turtle()
-tamanho = 20
-for i in range(15):
+tamanho = 100
+for i in range(3):
     desenhaQuadrado(cadu, tamanho)
     tamanho = tamanho + 10      # aumenta o tamanho para a próxima vez
     cadu.forward(10)            # move cadu um pouco à frente
