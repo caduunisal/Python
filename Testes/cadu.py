@@ -1030,12 +1030,19 @@ cadu.forward(75)
 wn.exitonclick()
 '''
 
+<<<<<<< HEAD
 # Treinando Tartarugas
+=======
+# -----------------------------------------------------------------------------
+# Treinando Tartarugas
+# -----------------------------------------------------------------------------
+>>>>>>> 3a85e3c6d65b3ae3d249ddc802fdaf63353afcac
 import turtle
 
 def desenhaQuadrado (t, tam):
     '''Faca a tartaruga t desenhar um quadrado de lado tam'''
 
+<<<<<<< HEAD
     for i in range(4):
         t.forward(tam)
         t.left(90)
@@ -1046,6 +1053,42 @@ wn.bgcolor(lightblue)
 cadu = turtle.Turtle()
 desenhaQuadrado(cadu, 50)
 
+=======
+    #for i in range(4):
+    for i in ['red', 'blue', 'green', 'blue']:
+        t.color(i)
+        t.forward(tam)
+        t.left(90)
+        
+def desenhaCirculo (t, raio):
+    '''Faca a tartaruga t desenhar um circulo de raio raio'''
+
+    t.circle(raio)
+
+wn = turtle.Screen()
+wn.bgcolor("lightblue")
+
+cadu = turtle.Turtle()
+tamanho = 20
+for i in range(15):
+    desenhaQuadrado(cadu, 100)
+    tamanho = tamanho + 10      # aumenta o tamanho para a próxima vez
+    cadu.forward(10)            # move cadu um pouco à frente
+    cadu.right(18)              # e dá uma virada nele
+
+carlos = turtle.Turtle()
+carlos.penup()              # Ajustando posicao de novo desenho
+carlos.goto(200,200)        # Ajustando posicao de novo desenho
+carlos.pendown()            # Ajustando posicao de novo desenho
+desenhaCirculo(carlos, 50)
+
+wn.exitonclick()
+
+
+# -----------------------------------------------------------------------------
+# Treinando Tartarugas
+# -----------------------------------------------------------------------------
+>>>>>>> 3a85e3c6d65b3ae3d249ddc802fdaf63353afcac
 
 
 
