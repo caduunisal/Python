@@ -1030,10 +1030,12 @@ cadu.forward(75)
 wn.exitonclick()
 '''
 
+
 # -----------------------------------------------------------------------------
 # Treinando Tartarugas
 # -----------------------------------------------------------------------------
 import turtle
+import pandas as pd
 
 def desenhaQuadrado (t, tam):
     '''Faca a tartaruga t desenhar um quadrado de lado tam'''
@@ -1073,6 +1075,13 @@ wn.exitonclick()
 # -----------------------------------------------------------------------------
 # Treinando Tartarugas
 # -----------------------------------------------------------------------------
+
+
+'''
+import pandas as pd
+
+filmes = ("https://github.com/alura-cursos/formacao-data-science/blob/master/movies.csv")
+'''
 
 
 
