@@ -1030,16 +1030,35 @@ cadu.forward(75)
 wn.exitonclick()
 '''
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+# Treinando Tartarugas
+=======
+>>>>>>> fd83fce1b61cf0880c307c2460482011be38f529
 # -----------------------------------------------------------------------------
 # Treinando Tartarugas
 # -----------------------------------------------------------------------------
+>>>>>>> 3a85e3c6d65b3ae3d249ddc802fdaf63353afcac
 import turtle
 import pandas as pd
 
 def desenhaQuadrado (t, tam):
     '''Faca a tartaruga t desenhar um quadrado de lado tam'''
 
+<<<<<<< HEAD
+    for i in range(4):
+        t.forward(tam)
+        t.left(90)
+
+wn = turtle.Screen()
+wn.bgcolor(lightblue)
+
+cadu = turtle.Turtle()
+desenhaQuadrado(cadu, 50)
+
+=======
     #for i in range(4):
     for i in ['red', 'cyan', 'white', 'orange']:
         t.color(i)
@@ -1075,6 +1094,7 @@ wn.exitonclick()
 # -----------------------------------------------------------------------------
 # Treinando Tartarugas
 # -----------------------------------------------------------------------------
+>>>>>>> 3a85e3c6d65b3ae3d249ddc802fdaf63353afcac
 
 
 '''
