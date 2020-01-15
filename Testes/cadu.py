@@ -1098,9 +1098,7 @@ wn.exitonclick()
 
 
 '''
-import pandas as pd
 
-filmes = ("https://github.com/alura-cursos/formacao-data-science/blob/master/movies.csv")
 '''
 
 
